@@ -1,0 +1,438 @@
+PS C:\Users\Витя\IdeaProjects\MainMod> .\gradlew.bat build --refresh-dependencies
+
+> Configure project :
+Fabric Loom: 1.5.8
+Refresh dependencies is in use, loom will be significantly slower.
+:remapping 53 mods from modImplementation (java-api)
+:remapping 54 mods from modImplementation (java-runtime)
+
+> Task :compileJava
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\entity\CustomEntityRenderer.java:9: error: cannot access EntityRenderer
+public class CustomEntityRenderer extends GeoEntityRenderer<CustomEntity> {
+       ^
+  class file for net.minecraft.client.render.entity.EntityRenderer not found
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\entity\CustomEntity.java:16: error: cannot find symbol
+import software.bernie.geckolib.core.animation.PlayState;
+                                              ^
+  symbol:   class PlayState
+  location: package software.bernie.geckolib.core.animation
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\entity\CustomEntity.java:17: error: package software.bernie.geckolib.core.animation.controller does not exist
+import software.bernie.geckolib.core.animation.controller.AnimationController;
+                                                         ^
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\entity\CustomEntity.java:44: error: package AnimationController does not exist
+    public void registerControllers(AnimationController.ControllerRegistrar controllers) {
+                                                       ^
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\entity\CustomEntityRenderer.java:4: error: cannot find symbol
+import net.minecraft.client.render.entity.EntityRendererFactory;
+                                         ^
+  symbol:   class EntityRendererFactory
+  location: package net.minecraft.client.render.entity
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\entity\CustomEntityRenderer.java:10: error: package EntityRendererFactory does not exist    
+    public CustomEntityRenderer(EntityRendererFactory.Context renderManager) {
+                                                     ^
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:3: error: package net.minecraft.client.gui.screen does not exist
+import net.minecraft.client.gui.screen.Screen;
+                                      ^
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:4: error: package net.minecraft.client.gui.widget does not exist
+import net.minecraft.client.gui.widget.ButtonWidget;
+                                      ^
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:5: error: package net.minecraft.client.gui.widget does not exist
+import net.minecraft.client.gui.widget.TextFieldWidget;
+                                      ^
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:6: error: cannot find symbol
+import net.minecraft.client.MinecraftClient;
+                           ^
+  symbol:   class MinecraftClient
+  location: package net.minecraft.client
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:9: error: package net.minecraft.client.util.math does not exist 
+import net.minecraft.client.util.math.MatrixStack;
+                                     ^
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:11: error: cannot find symbol
+public class EntityEditorScreen extends Screen {
+                                        ^
+  symbol: class Screen
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:12: error: cannot find symbol
+    private TextFieldWidget nameField, healthField, speedField;
+            ^
+  symbol:   class TextFieldWidget
+  location: class EntityEditorScreen
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:48: error: cannot find symbol
+    public void render(MatrixStack matrices, int mouseX, int mouseY, float delta) {
+                       ^
+  symbol:   class MatrixStack
+  location: class EntityEditorScreen
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\ModScreens.java:6: error: package net.fabricmc.fabric.api.client.rendering.v1 does not exist
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
+                                                  ^
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\manager\PresetManager.java:5: error: cannot find symbol
+import net.minecraft.client.MinecraftClient;
+                           ^
+  symbol:   class MinecraftClient
+  location: package net.minecraft.client
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\entity\CustomEntity.java:37: error: incompatible types: CustomEntity cannot be converted to PathAwareEntity
+        this.goalSelector.add(1, new MeleeAttackGoal(this, 1.0, true));
+                                                     ^
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\entity\CustomEntity.java:38: error: incompatible types: CustomEntity cannot be converted to PathAwareEntity
+        this.goalSelector.add(2, new WanderAroundFarGoal(this, 1.0));
+                                                         ^
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\entity\CustomEntity.java:45: error: cannot find symbol
+        controllers.add(new AnimationController<>(this, "controller", 0, state -> {
+                            ^
+  symbol:   class AnimationController
+  location: class CustomEntity
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\entity\CustomEntity.java:47: error: cannot find symbol
+            return PlayState.CONTINUE;
+                   ^
+  symbol:   variable PlayState
+  location: class CustomEntity
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:18: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:20: error: cannot find symbol
+        this.nameField = new TextFieldWidget(textRenderer, width / 2 - 100, 40, 200, 20, Text.literal("Name"));
+                             ^
+  symbol:   class TextFieldWidget
+  location: class EntityEditorScreen
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:20: error: cannot find symbol
+        this.nameField = new TextFieldWidget(textRenderer, width / 2 - 100, 40, 200, 20, Text.literal("Name"));
+                                             ^
+  symbol:   variable textRenderer
+  location: class EntityEditorScreen
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:20: error: cannot find symbol
+        this.nameField = new TextFieldWidget(textRenderer, width / 2 - 100, 40, 200, 20, Text.literal("Name"));
+                                                           ^
+  symbol:   variable width
+  location: class EntityEditorScreen
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:21: error: cannot find symbol
+        this.healthField = new TextFieldWidget(textRenderer, width / 2 - 100, 70, 200, 20, Text.literal("Health"));
+                               ^
+  symbol:   class TextFieldWidget
+  location: class EntityEditorScreen
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:21: error: cannot find symbol
+        this.healthField = new TextFieldWidget(textRenderer, width / 2 - 100, 70, 200, 20, Text.literal("Health"));
+                                               ^
+  symbol:   variable textRenderer
+  location: class EntityEditorScreen
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:21: error: cannot find symbol
+        this.healthField = new TextFieldWidget(textRenderer, width / 2 - 100, 70, 200, 20, Text.literal("Health"));
+                                                             ^
+  symbol:   variable width
+  location: class EntityEditorScreen
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:22: error: cannot find symbol
+        this.speedField = new TextFieldWidget(textRenderer, width / 2 - 100, 100, 200, 20, Text.literal("Speed"));
+                              ^
+  symbol:   class TextFieldWidget
+  location: class EntityEditorScreen
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:22: error: cannot find symbol
+        this.speedField = new TextFieldWidget(textRenderer, width / 2 - 100, 100, 200, 20, Text.literal("Speed"));
+                                              ^
+  symbol:   variable textRenderer
+  location: class EntityEditorScreen
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:22: error: cannot find symbol
+        this.speedField = new TextFieldWidget(textRenderer, width / 2 - 100, 100, 200, 20, Text.literal("Speed"));
+                                                            ^
+  symbol:   variable width
+  location: class EntityEditorScreen
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:28: error: cannot find symbol
+        addDrawableChild(ButtonWidget.builder(Text.literal("Save Preset"), button -> savePreset()).dimensions(width / 2 - 100, 130, 200, 20).build());
+                                                                                                              ^
+  symbol:   variable width
+  location: class EntityEditorScreen
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:28: error: cannot find symbol
+        addDrawableChild(ButtonWidget.builder(Text.literal("Save Preset"), button -> savePreset()).dimensions(width / 2 - 100, 130, 200, 20).build());
+                         ^
+  symbol:   variable ButtonWidget
+  location: class EntityEditorScreen
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:31: error: cannot find symbol
+        }).dimensions(width / 2 - 100, 160, 200, 20).build());
+                      ^
+  symbol:   variable width
+  location: class EntityEditorScreen
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:29: error: cannot find symbol
+        addDrawableChild(ButtonWidget.builder(Text.literal("Reload Models"), button -> {
+                         ^
+  symbol:   variable ButtonWidget
+  location: class EntityEditorScreen
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:30: error: cannot find symbol
+            MinecraftClient.getInstance().reloadResources(); // ? уюЁ ўр  яхЁхчруЁєчър
+            ^
+  symbol:   variable MinecraftClient
+  location: class EntityEditorScreen
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:35: error: cannot find symbol
+        Preset preset = new Preset(nameField.getText(), getFloat(healthField.getText()), getFloat(speedField.getText()));
+        ^
+  symbol:   class Preset
+  location: class EntityEditorScreen
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:35: error: cannot find symbol
+        Preset preset = new Preset(nameField.getText(), getFloat(healthField.getText()), getFloat(speedField.getText()));
+                            ^
+  symbol:   class Preset
+  location: class EntityEditorScreen
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:36: error: cannot find symbol
+        PresetManager.savePreset(preset, preset.name);
+        ^
+  symbol:   variable PresetManager
+  location: class EntityEditorScreen
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:47: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:50: error: cannot find symbol
+        drawCenteredText(matrices, textRenderer, "Custom Entity Editor", width / 2, 15, 0xFFFFFF);
+                                   ^
+  symbol:   variable textRenderer
+  location: class EntityEditorScreen
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:50: error: cannot find symbol
+        drawCenteredText(matrices, textRenderer, "Custom Entity Editor", width / 2, 15, 0xFFFFFF);
+                                                                         ^
+  symbol:   variable width
+  location: class EntityEditorScreen
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:54: error: cannot find symbol
+        super.render(matrices, mouseX, mouseY, delta);
+        ^
+  symbol:   variable super
+  location: class EntityEditorScreen
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\ModScreens.java:10: error: cannot find symbol
+        EntityRendererRegistry.register(ModEntities.CUSTOM_ENTITY, CustomEntityRenderer::new);
+        ^
+  symbol:   variable EntityRendererRegistry
+  location: class ModScreens
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\screenhandler\ModScreenHandlers.java:17: error: cannot infer type arguments for ScreenHandlerType<>
+                new ScreenHandlerType<>(SimpleEditorScreenHandler::new)
+                ^
+  reason: cannot infer type-variable(s) T
+    (actual and formal argument lists differ in length)
+  where T is a type-variable:
+    T extends ScreenHandler declared in class ScreenHandlerType
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\screenhandler\ModScreenHandlers.java:22: error: SimpleEditorScreenHandler is not abstract and does not override abstract method quickMove(PlayerEntity,int) in ScreenHandler
+    public static class SimpleEditorScreenHandler extends ScreenHandler {
+                  ^
+C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\manager\PresetManager.java:13: error: cannot find symbol
+    private static final File PRESET_DIR = new File(MinecraftClient.getInstance().runDirectory, "presets");
+                                                    ^
+  symbol:   variable MinecraftClient
+  location: class PresetManager
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+46 errors
+
+> Task :compileJava FAILED
+
+[Incubating] Problems report is available at: file:///C:/Users/%D0%92%D0%B8%D1%82%D1%8F/IdeaProjects/MainMod/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:11: error: cannot find symbol
+  public class EntityEditorScreen extends Screen {
+                                          ^
+    symbol: class ScreenNote: Some messages have been simplified; recompile with -Xdiags:verbose to get full outputC:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\entity\CustomEntity.java:17: error: package software.bernie.geckolib.core.animation.controller does not exist
+  import software.bernie.geckolib.core.animation.controller.AnimationController;
+                                                           ^
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\entity\CustomEntity.java:44: error: package AnimationController does not exist
+      public void registerControllers(AnimationController.ControllerRegistrar controllers) {
+                                                         ^
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\entity\CustomEntityRenderer.java:10: error: package EntityRendererFactory does not exist  
+      public CustomEntityRenderer(EntityRendererFactory.Context renderManager) {
+                                                       ^
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:3: error: package net.minecraft.client.gui.screen does not exist
+  import net.minecraft.client.gui.screen.Screen;
+                                        ^
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:4: error: package net.minecraft.client.gui.widget does not exist
+  import net.minecraft.client.gui.widget.ButtonWidget;
+                                        ^
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:5: error: package net.minecraft.client.gui.widget does not exist
+  import net.minecraft.client.gui.widget.TextFieldWidget;
+                                        ^
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:9: error: package net.minecraft.client.util.math does not exist
+  import net.minecraft.client.util.math.MatrixStack;
+                                       ^
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\ModScreens.java:6: error: package net.fabricmc.fabric.api.client.rendering.v1 does not exist
+  import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
+                                                    ^C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:18: error: method does not override or implement a method from a supertype
+      @Override
+      ^
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:47: error: method does not override or implement a method from a supertype
+      @Override
+      ^C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\entity\CustomEntity.java:16: error: cannot find symbol
+  import software.bernie.geckolib.core.animation.PlayState;
+                                                ^
+    symbol:   class PlayState
+    location: package software.bernie.geckolib.core.animation
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\entity\CustomEntityRenderer.java:4: error: cannot find symbol
+  import net.minecraft.client.render.entity.EntityRendererFactory;
+                                           ^
+    symbol:   class EntityRendererFactory
+    location: package net.minecraft.client.render.entity
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:6: error: cannot find symbol
+  import net.minecraft.client.MinecraftClient;
+                             ^
+    symbol:   class MinecraftClient
+    location: package net.minecraft.client
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:12: error: cannot find symbol
+      private TextFieldWidget nameField, healthField, speedField;
+              ^
+    symbol:   class TextFieldWidget
+    location: class EntityEditorScreen
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:48: error: cannot find symbol
+      public void render(MatrixStack matrices, int mouseX, int mouseY, float delta) {
+                         ^
+    symbol:   class MatrixStack
+    location: class EntityEditorScreen
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\manager\PresetManager.java:5: error: cannot find symbol
+  import net.minecraft.client.MinecraftClient;
+                             ^
+    symbol:   class MinecraftClient
+    location: package net.minecraft.client
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\entity\CustomEntity.java:45: error: cannot find symbol
+          controllers.add(new AnimationController<>(this, "controller", 0, state -> {
+                              ^
+    symbol:   class AnimationController
+    location: class CustomEntity
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\entity\CustomEntity.java:47: error: cannot find symbol
+              return PlayState.CONTINUE;
+                     ^
+    symbol:   variable PlayState
+    location: class CustomEntity
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:20: error: cannot find symbol
+          this.nameField = new TextFieldWidget(textRenderer, width / 2 - 100, 40, 200, 20, Text.literal("Name"));
+                               ^
+    symbol:   class TextFieldWidget
+    location: class EntityEditorScreen
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:20: error: cannot find symbol
+          this.nameField = new TextFieldWidget(textRenderer, width / 2 - 100, 40, 200, 20, Text.literal("Name"));
+                                               ^
+    symbol:   variable textRenderer
+    location: class EntityEditorScreen
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:20: error: cannot find symbol
+          this.nameField = new TextFieldWidget(textRenderer, width / 2 - 100, 40, 200, 20, Text.literal("Name"));
+                                                             ^
+    symbol:   variable width
+    location: class EntityEditorScreen
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:21: error: cannot find symbol
+          this.healthField = new TextFieldWidget(textRenderer, width / 2 - 100, 70, 200, 20, Text.literal("Health"));
+                                 ^
+    symbol:   class TextFieldWidget
+    location: class EntityEditorScreen
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:21: error: cannot find symbol
+          this.healthField = new TextFieldWidget(textRenderer, width / 2 - 100, 70, 200, 20, Text.literal("Health"));
+                                                 ^
+    symbol:   variable textRenderer
+    location: class EntityEditorScreen
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:21: error: cannot find symbol
+          this.healthField = new TextFieldWidget(textRenderer, width / 2 - 100, 70, 200, 20, Text.literal("Health"));
+                                                               ^
+    symbol:   variable width
+    location: class EntityEditorScreen
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:22: error: cannot find symbol
+          this.speedField = new TextFieldWidget(textRenderer, width / 2 - 100, 100, 200, 20, Text.literal("Speed"));
+                                ^
+    symbol:   class TextFieldWidget
+    location: class EntityEditorScreen
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:22: error: cannot find symbol
+          this.speedField = new TextFieldWidget(textRenderer, width / 2 - 100, 100, 200, 20, Text.literal("Speed"));
+                                                ^
+    symbol:   variable textRenderer
+    location: class EntityEditorScreen
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:22: error: cannot find symbol
+          this.speedField = new TextFieldWidget(textRenderer, width / 2 - 100, 100, 200, 20, Text.literal("Speed"));
+                                                              ^
+    symbol:   variable width
+    location: class EntityEditorScreen
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:28: error: cannot find symbol
+          addDrawableChild(ButtonWidget.builder(Text.literal("Save Preset"), button -> savePreset()).dimensions(width / 2 - 100, 130, 200, 20).build());
+                                                                                                                ^
+    symbol:   variable width
+    location: class EntityEditorScreen
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:28: error: cannot find symbol
+          addDrawableChild(ButtonWidget.builder(Text.literal("Save Preset"), button -> savePreset()).dimensions(width / 2 - 100, 130, 200, 20).build());
+                           ^
+    symbol:   variable ButtonWidget
+    location: class EntityEditorScreen
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:31: error: cannot find symbol
+          }).dimensions(width / 2 - 100, 160, 200, 20).build());
+                        ^
+    symbol:   variable width
+    location: class EntityEditorScreen
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:29: error: cannot find symbol
+          addDrawableChild(ButtonWidget.builder(Text.literal("Reload Models"), button -> {
+                           ^
+    symbol:   variable ButtonWidget
+    location: class EntityEditorScreen
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:30: error: cannot find symbol
+              MinecraftClient.getInstance().reloadResources(); // ? уюЁ ўр  яхЁхчруЁєчър
+              ^
+    symbol:   variable MinecraftClient
+    location: class EntityEditorScreen
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:35: error: cannot find symbol
+          Preset preset = new Preset(nameField.getText(), getFloat(healthField.getText()), getFloat(speedField.getText()));
+          ^
+    symbol:   class Preset
+    location: class EntityEditorScreen
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:35: error: cannot find symbol
+          Preset preset = new Preset(nameField.getText(), getFloat(healthField.getText()), getFloat(speedField.getText()));
+                              ^
+    symbol:   class Preset
+    location: class EntityEditorScreen
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:36: error: cannot find symbol
+          PresetManager.savePreset(preset, preset.name);
+          ^
+    symbol:   variable PresetManager
+    location: class EntityEditorScreen
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:50: error: cannot find symbol
+          drawCenteredText(matrices, textRenderer, "Custom Entity Editor", width / 2, 15, 0xFFFFFF);
+                                     ^
+    symbol:   variable textRenderer
+    location: class EntityEditorScreen
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:50: error: cannot find symbol
+          drawCenteredText(matrices, textRenderer, "Custom Entity Editor", width / 2, 15, 0xFFFFFF);
+                                                                           ^
+    symbol:   variable width
+    location: class EntityEditorScreen
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\EntityEditorScreen.java:54: error: cannot find symbol
+          super.render(matrices, mouseX, mouseY, delta);
+          ^
+    symbol:   variable super
+    location: class EntityEditorScreen
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\ModScreens.java:10: error: cannot find symbol
+          EntityRendererRegistry.register(ModEntities.CUSTOM_ENTITY, CustomEntityRenderer::new);
+          ^
+    symbol:   variable EntityRendererRegistry
+    location: class ModScreens
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\manager\PresetManager.java:13: error: cannot find symbol
+      private static final File PRESET_DIR = new File(MinecraftClient.getInstance().runDirectory, "presets");
+                                                      ^
+    symbol:   variable MinecraftClient
+    location: class PresetManagerC:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\screenhandler\ModScreenHandlers.java:17: error: cannot infer type arguments for ScreenHandlerType<>
+                  new ScreenHandlerType<>(SimpleEditorScreenHandler::new)
+                  ^
+    reason: cannot infer type-variable(s) T
+      (actual and formal argument lists differ in length)
+    where T is a type-variable:
+      T extends ScreenHandler declared in class ScreenHandlerTypeC:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\entity\CustomEntity.java:37: error: incompatible types: CustomEntity cannot be converted to PathAwareEntity
+          this.goalSelector.add(1, new MeleeAttackGoal(this, 1.0, true));
+                                                       ^
+  C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\entity\CustomEntity.java:38: error: incompatible types: CustomEntity cannot be converted to PathAwareEntity
+          this.goalSelector.add(2, new WanderAroundFarGoal(this, 1.0));
+                                                           ^C:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\entity\CustomEntityRenderer.java:9: error: cannot access EntityRenderer
+  public class CustomEntityRenderer extends GeoEntityRenderer<CustomEntity> {
+         ^
+    class file for net.minecraft.client.render.entity.EntityRenderer not foundC:\Users\┬шЄ \IdeaProjects\MainMod\src\main\java\com\example\mainmod\gui\screenhand
+ler\ModScreenHandlers.java:22: error: SimpleEditorScreenHandler is not abstract and does not override abstract method quickMove(PlayerEntity,int) in ScreenHandler
+      public static class SimpleEditorScreenHandler extends ScreenHandler {
+                    ^
+  46 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.12/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.      
+
+BUILD FAILED in 3m 13s
+1 actionable task: 1 executed
+PS C:\Users\Витя\IdeaProjects\MainMod> 
